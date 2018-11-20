@@ -7,7 +7,6 @@ const Usuario = require('../models/usuario');
 
 const { verificaToken, verificaAdmin_Role } = require('../middlewares/autentication');
 
-
 const app = express();
 
 app.get('/usuario', verificaToken, function(req, res) {
